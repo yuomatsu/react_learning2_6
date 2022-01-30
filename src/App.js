@@ -1,32 +1,13 @@
-import { BrowserRouter } from "react-router-dom";
-import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
-import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
-import { SearchInput } from "./components/molucules/SearchInput";
-import { UserCard } from "./components/organisms/user/UserCard";
-import { HeaderOnly } from "./components/templates/HeaderOnly";
-import { DefaultLayout } from "./components/templates/DefaultLyout";
+// import { BrowserRouter } from "react-router-dom";
+// import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
+// import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
+// import { SearchInput } from "./components/molucules/SearchInput";
+// import { UserCard } from "./components/organisms/user/UserCard";
+// import { HeaderOnly } from "./components/templates/HeaderOnly";
+// import { DefaultLayout } from "./components/templates/DefaultLyout";
+import { Router } from "./router/Router";
 import "./styles.css";
 
-const user = {
-  name: "ゆう",
-  image: "https://source.unsplash.com/2l0CWTpcChI",
-  email: "12345@xxx.com",
-  phone: "000-0000-1000",
-  company: {
-    name: "テスト株式会社"
-  },
-  website: "fgerthyjhrgefwwgrhtjyhrge"
-};
-
 export default function App() {
-  return (
-    <BrowserRouter>
-      <DefaultLayout>
-        <PrimaryButton>テスト</PrimaryButton>
-        <SecondaryButton>検索</SecondaryButton>
-        <SearchInput></SearchInput>
-        <UserCard user={user}></UserCard>
-      </DefaultLayout>
-    </BrowserRouter>
-  );
+  return <Router />;
 }
