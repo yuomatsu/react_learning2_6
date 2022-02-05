@@ -9,4 +9,6 @@ export const SecondaryButton = (props) => {
 
 const SButton = styled(BaseButton)`
   background-color: #40514e;
+  margin: 0 auto;
+  text-align: center;
 `;
